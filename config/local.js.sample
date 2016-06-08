@@ -1,0 +1,29 @@
+/**
+ * Local environment settings
+ * For more information, check out:
+ * http://sailsjs.org/#!/documentation/anatomy/myApp/config/local.js.html
+ */
+
+module.exports = {
+  port: process.env.PORT || 7071,
+  environment: process.env.NODE_ENV || 'development',
+
+  models: {
+    migrate: "safe"
+  },
+
+  connections: {
+    runic: {
+      module: "sails-mysql",
+      user: "MYSQL_USER",
+      password: "MYSQL_PASS",
+      database: "MYSQL_DB",
+      host: "MYSQL_HOST"
+    }
+  },
+
+  defaults: {
+    developer_ids: 1,
+    password: "__DEFAULT_PASS__"
+  }
+};

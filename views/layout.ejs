@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>I M BUM = InterVoyager MQTT Broker User Manager</title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,700,700italic,300,300italic,500,500italic' rel='stylesheet' type='text/css'>
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/custom.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <!--STYLES END-->
+  </head>
+
+  <body>
+    <div id="page-head">
+      <div id="page-title">MQTT User List</div>
+      <hr>
+    </div>
+    <div id="page-body">
+      <%- body %>
+    </div>
+
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/dependencies/jquery-2.1.4.min.js"></script>
+    <script src="/js/dependencies/mqttws31.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/js/mqttinit.js"></script>
+    <!--SCRIPTS END-->
+  </body>
+</html>
